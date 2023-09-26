@@ -1,0 +1,64 @@
+Algoritma: LingkaranNoAbsen
+{dibaca jari-jari lingkaran dari piranti masukan. Hitunglah keliling dan luas lingkaran tersebut}
+Deklarasi:
+r : int
+keliling, luas : double
+Deskripsi:
+1. print “masukkan jari-jari lingkaran!”
+2. read r
+3. keliling = 2*3.14*r
+4. luas = 3.14 *r*r
+5. print keliling
+6. print luas
+
+
+Algoritma: Gaji14
+{input jumlah masuk dan tidak masuk, lalu hitung total gaji}
+
+Deklarasi:
+jmlMasuk, jmlTdkMasuk, totGaji	: int
+gaji = 40000, potGaji = 25000		: int
+
+Deskripsi
+
+1. print "Gaji harian: "
+2. input gaji
+3. print "Potongan gaji harian: "
+4. input potGaji
+5. print "Masukkan jumlah hari masuk kerja anda:"
+6. input jmlMasuk
+7. print "Masukkan jumlah hari tidak masuk kerja anda: "
+8. input jmlTdkMasuk
+9. totGaji = (jmlMasuk * gaji) - (jmlTdkMasuk * potGaji)
+10. print "Gaji yang anda terima adalah: " + totGaji
+
+
+Algotitma: HargaBayar14
+{dibaca harga barang, diskon, dan jumlah barang dari piranti masukan. Hitunglahjumlah diskon dan harga barang}
+
+Deklarasi:
+merk			: String
+harga, jumBuk, jumHal	: int
+dis, total, bayar,jumDis	: double
+
+Deskripsi
+1. print "Masukkan merk buku: "
+2. input merk
+3. print "Masukkan jumlah halaman buku: "
+4. input jumHal
+5. print "Masukkan harga buku: "
+6. print harga
+7. print "Masukkan jumlah buku yang dibeli: "
+8. input jumBuk
+9. print "Masukkan diskon: "
+10. input dis
+11. total = harga * jumBuk
+12. jumDis = total * dis
+13. bayar = total - jumDis
+14. print "Diskon yang anda dapatkan adalah: "
+15. print jumDis
+16. print "Jumlah yang harus dibayarkan adalah: "
+17. print bayar
+
+
+
