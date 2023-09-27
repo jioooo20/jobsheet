@@ -16,7 +16,7 @@ public class PemilihanPercobaan214 {
         float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
 
         String nilaiHuruf;
-        if (total > 80) {
+        if (total > 80 && total <= 100) {
             nilaiHuruf = "A";
         } else if (total > 73) {
             nilaiHuruf = "B+";
@@ -28,14 +28,26 @@ public class PemilihanPercobaan214 {
             nilaiHuruf = "C";
         } else if (total > 39) {
             nilaiHuruf = "D";
-        } else {
+        } else if (total < 39 && total >= 0) {
             nilaiHuruf = "E";
+        } else {
+            nilaiHuruf = "Invalid";
         }
 
         String message = (total < 65) ? "Remidi" : "Tidak remidi";
-        System.out.println("Nilai akhir = " + nilaiHuruf + ", sehingga " + message);
+
+        System.out.println("===================================================");
+        if (total >= 0 && total <= 100) {
+            System.out.println("Nilai akhir = " + nilaiHuruf + ", sehingga " + message);
+        } else {
+            System.out.println("Anda kuliah??");
+        }
+
     }
 }
+
+// String message = (total < 65) ? "Remidi" : "Tidak remidi";
+// System.out.println("Nilai akhir = " + nilaiHuruf + ", sehingga " + message);
 
 // public static void main(String[] args) {
 // Scanner input14 = new Scanner(System.in);
