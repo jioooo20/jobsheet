@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-public class PemilihanPercobaan214 {
+public class PemilihanPercobaan213 {
     public static void main(String[] args) {
-        Scanner input14 = new Scanner(System.in);
+        Scanner input13 = new Scanner(System.in);
 
         System.out.println("Nilai uas\t: ");
-        float uas = input14.nextFloat();
+        float uas = input13.nextFloat();
         System.out.println("Nilai uts\t: ");
-        float uts = input14.nextFloat();
+        float uts = input13.nextFloat();
         System.out.println("Nilai kuis\t: ");
-        float kuis = input14.nextFloat();
+        float kuis = input13.nextFloat();
         System.out.println("Nilai tugas\t: ");
-        float tugas = input14.nextFloat();
+        float tugas = input13.nextFloat();
 
         float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
 
@@ -50,16 +50,16 @@ public class PemilihanPercobaan214 {
 // System.out.println("Nilai akhir = " + nilaiHuruf + ", sehingga " + message);
 
 // public static void main(String[] args) {
-// Scanner input14 = new Scanner(System.in);
+// Scanner input13 = new Scanner(System.in);
 
 // System.out.println("Nilai uas\t: ");
-// float uas = input14.nextFloat();
+// float uas = input13.nextFloat();
 // System.out.println("Nilai uts\t: ");
-// float uts = input14.nextFloat();
+// float uts = input13.nextFloat();
 // System.out.println("Nilai kuis\t: ");
-// float kuis = input14.nextFloat();
+// float kuis = input13.nextFloat();
 // System.out.println("Nilai tugas\t: ");
-// float tugas = input14.nextFloat();
+// float tugas = input13.nextFloat();
 
 // float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
 
