@@ -4,8 +4,8 @@ public class ForKelipatan13 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int kelipatan, rata2, jumlah = 0, counter = 0;
-
+        int kelipatan,  jumlah = 0, counter = 0;
+        double rata2;
         System.out.println("Masukkan bilangan kelipatan (1-9): ");
         kelipatan = scan.nextInt();
 
@@ -15,7 +15,7 @@ public class ForKelipatan13 {
                 counter++;
             }
         }
-        rata2 = jumlah / counter;
+        rata2 = (double) jumlah / counter;
 
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
         System.out.printf("Total bilangan kelipatan %d dari 1 sampai 50 adlaah %d\n", kelipatan, jumlah);
