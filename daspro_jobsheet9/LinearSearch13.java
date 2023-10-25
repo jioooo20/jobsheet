@@ -6,10 +6,9 @@ public class LinearSearch13 {
 
         System.out.print("Masukkan jumlah elemen array: ");
         int jum = input.nextInt();
-
         int[] arrayInt = new int[jum];
         int key;
-        int hasil=0;
+        int hasil=-1;
 
         for(int i = 0;i<arrayInt.length;i++){
             System.out.print("Masukkan elemen array ke-" +i+" : ");
@@ -23,8 +22,12 @@ public class LinearSearch13 {
                 hasil = i;
                 break;
             }
-        }       
-        System.out.println("Key ada di posisi indeks ke-"+hasil);   
+        } 
+        if(hasil != -1){
+            System.out.println("Key ada di posisi indeks ke-"+hasil); 
+        }else{
+            System.out.println("Key tidak ditemukan");
+        }
     }
 }
 
