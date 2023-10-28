@@ -1,4 +1,3 @@
-package daspro_jobsheet9;
 import java.util.Scanner;
 public class LinearSearch13 {
     public static void main(String[] args) {
