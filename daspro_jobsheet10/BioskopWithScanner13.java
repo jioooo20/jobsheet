@@ -34,7 +34,13 @@ public class BioskopWithScanner13 {
                 System.out.println("Nomor Baris/Kolom Kursi Tidak Tersedia");
                 continue;
             }
-            penonton[baris-1][kolom-1] = nama;
+
+                   if(penonton[baris-1][kolom-1] != null){
+                        System.out.println("Kursi telah terisi, masukkan baris dan kolom kembali.");
+                        continue;
+                   }else{
+                    penonton[baris-1][kolom-1] = nama;
+                   }
 
 
             
@@ -65,12 +71,3 @@ public class BioskopWithScanner13 {
 }
 
 
-            // for (int i = 0; i < penonton.length; i++) {
-            //     for (int j = 0; j < penonton[i].length; j++) {
-            //        if(penonton[i][j] == null){
-            //             penonton[baris-1][kolom-1] = nama;
-            //        }else{
-            //         System.out.println("Nomor Baris/Kolom Kursi Tidak Tersedia");
-            //        }
-            //     }
-            // }
