@@ -1,8 +1,7 @@
 package daspro_jobsheet10;
 
 public class Bioskop13 {
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {       
         String[][] penonton = new String[4][2];
 
         penonton[0][0] = "Amin";
@@ -20,11 +19,25 @@ public class Bioskop13 {
         System.out.printf("%s \t %s \n", penonton[3][0], penonton[3][1]);
 
         System.out.println(penonton.length);
-        for(int i=0; i<penonton.length; i++){
-            System.out.println("Panjang baris ke-" + (i+1) +": " + penonton[i].length);
-        }
         for (String[] barisPenonton : penonton) {
             System.out.println("Panjang baris: "+barisPenonton.length);
         }
+
+        System.out.println("Penonton pada baris ke-3: ");
+        for(int i=0; i<penonton[2].length;i++){
+            System.out.print(penonton[2][i]);
+        }
+
     }
 }
+        // for(int i=0; i<penonton.length; i++){
+        //     System.out.println("Panjang baris ke-" + (i+1) +": " + penonton[i].length);
+        // }
+
+        // for(int i=0;i<penonton.length;i++){
+        //     if(i==2){
+        //         for(int j=0; j<penonton[i].length;j++){
+        //             System.out.print(penonton[i][j] + "\t");
+        //         }
+        //     }
+        // }
