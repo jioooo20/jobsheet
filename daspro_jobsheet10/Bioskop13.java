@@ -23,11 +23,9 @@ public class Bioskop13 {
             System.out.println("Panjang baris: "+barisPenonton.length);
         }
 
-        System.out.println("Penonton pada baris ke-3: ");
-        for (String i : penonton[2]) {
-            System.out.println(i);
-        }
-
+        for(int i=0; i<penonton.length;i++){
+            System.out.println("Penonton pada baris ke-"+(i+1)+": "+ String.join(", ", penonton[i]));
+        }        
     }
 }
         // for(int i=0; i<penonton.length; i++){
@@ -42,6 +40,6 @@ public class Bioskop13 {
         //     }
         // }
 
-        // for(int i=0; i<penonton[2].length;i++){
-        //     System.out.print(penonton[2][i]);
-        // }        
+        // for (String i : penonton[2]) {
+        //     System.out.println(i);
+        // }
