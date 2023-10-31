@@ -9,7 +9,9 @@ public class BioskopWithScanner13 {
         String[][] penonton = new String[4][2];       
 
         do{
+        System.out.println("=========================");
         System.out.println("\t Menu");
+        System.out.println("=========================");
         System.out.println("1. Input Data Penonton");
         System.out.println("2. Tampilkan Daftar Penonton");
         System.out.println("3. Exit");
@@ -57,7 +59,11 @@ public class BioskopWithScanner13 {
             System.out.println("===Tampilkan Daftar Penonton===");
             for (int i = 0; i < penonton.length; i++) {
                 for (int j = 0; j < penonton[i].length; j++) {
-                    System.out.println("Penonton pada baris " + (i+1) + ", kolom " + (j+1) + ": " + penonton[i][j]);
+                    if(penonton[i][j] != null){
+                        System.out.println("Penonton pada baris " + (i+1) + ", kolom " + (j+1) + ": " + penonton[i][j]);                    
+                    }else{
+                        System.out.println("Penonton pada baris " + (i+1) + ", kolom " + (j+1) + ": " +"***");
+                    }
                 }
             }
                 break;//break menu2
