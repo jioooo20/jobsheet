@@ -10,12 +10,11 @@ public class looparay1d3 {
             for(int j=0;j<3;j++){
                 System.out.print(alpha[simpanIndex]);
                 simpanIndex +=5;
-                if(simpanIndex>=15){
+                if(simpanIndex>=alpha.length){
                     simpanIndex = i+1;
                 }
             }
             System.out.println();
         }
-
     }
 }
