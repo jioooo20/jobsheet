@@ -1,4 +1,4 @@
-package jobsheet.daspro_jobsheet7;
+package jobsheet.daspro_jobsheet11;
 import java.util.Scanner;
 public class se3_1 {
     public static void main(String[] args) {
@@ -18,6 +18,5 @@ public class se3_1 {
             }
             System.out.println();    
         }        
-
     }   
 }
