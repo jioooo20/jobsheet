@@ -1,6 +1,6 @@
 package daspro_jobsheet13;
 
-public class Percobaan5 {
+public class Percobaan513 {
 
     static void Tampil(String str, int... a) {
         System.out.println("String: " + str);
