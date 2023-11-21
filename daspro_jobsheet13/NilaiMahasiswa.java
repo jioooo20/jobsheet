@@ -4,47 +4,49 @@ import java.util.Scanner;
 
 public class NilaiMahasiswa {
 
-    static String[] nama = { "Sari", "Rina", "Yani", "Dwi", "Lusi" };
-    static int[][] nilai = new int[5][7];
-    // {
-    // { 20, 19, 25, 20, 10, 0, 10 },
-    // { 30, 30, 40, 10, 15, 20, 25 },
-    // { 5, 0, 20, 25, 10, 5, 45 },
-    // { 50, 0, 7, 8, 0, 30, 60 },
-    // { 15, 10, 16, 15, 10, 10, 5 }
-    // };
+    static int jumMhs;
+    static int jumTugas;
+    static String[] nama;
+    static int[][] nilai;
 
-    // Fungsi untuk meninputkan data nilai mahasiswa
     static void inputData() {
         Scanner input = new Scanner(System.in);
-        for (int i = 0; i < nama.length; i++) {
-            System.out.println("Masukkan nilai " + nama[i] + " untuk 7 minggu:");
-            for (int j = 0; j < 7; j++) {
+
+        System.out.print("Jumlah mahasiswa: ");
+        jumMhs = input.nextInt();
+        System.out.print("Jumlah tugas: ");
+        jumTugas = input.nextInt();
+
+        nama = new String[jumMhs];
+        nilai = new int[jumMhs][jumTugas];
+
+        for (int i = 0; i < jumMhs; i++) {
+            System.out.print("Nama mahasiswa ke-" + (i + 1) + ": ");
+            nama[i] = input.next();
+            for (int j = 0; j < jumTugas; j++) {
+                System.out.print("Nilai tugas minggu ke " + (j + 1) + ": ");
                 nilai[i][j] = input.nextInt();
             }
         }
+        input.close();
     }
 
-    // Fungsi untuk menampilkan seluruh nilai mahasiswa dari minggu pertama sampai
-    // ketujuh
     static void tampilNilai() {
-        for (int i = 0; i < nama.length; i++) {
+        for (int i = 0; i < jumMhs; i++) {
             System.out.print(nama[i] + ": ");
-            for (int j = 0; j < 7; j++) {
+            for (int j = 0; j < jumTugas; j++) {
                 System.out.print(nilai[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    // Fungsi untuk mencari pada hari keberapakah terdapat nilai tertinggi dibanding
-    // hari lain
     static void mingguTertinggi() {
         int index = 0;
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < jumTugas; i++) {
             int max = nilai[0][i];
-            for (int j = 1; j < nama.length; j++) {
+            for (int j = 1; j < jumMhs; j++) {
                 if (nilai[j][i] > max) {
                     max = nilai[j][i];
                     index = j;
@@ -54,13 +56,11 @@ public class NilaiMahasiswa {
         }
     }
 
-    // Fungsi untuk menampilkan mahasiswa yang memiliki nilai tertinggi beserta
-    // minggu keberapa
     static void nilMhsTertinggi() {
-        for (int i = 0; i < nama.length; i++) {
+        for (int i = 0; i < jumMhs; i++) {
             int max = nilai[i][0];
             int index = 0;
-            for (int j = 1; j < 7; j++) {
+            for (int j = 1; j < jumTugas; j++) {
                 if (nilai[i][j] > max) {
                     max = nilai[i][j];
                     index = j;
@@ -72,7 +72,6 @@ public class NilaiMahasiswa {
     }
 
     public static void main(String[] args) {
-        // Menjalankan fungsi-fungsi yang diminta
         inputData();
         tampilNilai();
         mingguTertinggi();
