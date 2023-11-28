@@ -22,5 +22,4 @@ public class DeretDescendingRekursif {
         berkurang0(n);
         input.close();
     }
-
 }
